@@ -47,8 +47,6 @@ function reducer( state = initialState.goodsPurchased, action ){
       return renderElements( state );
       } else if( action.type === 'REMOVE' ){
           return state.filter( (e) => parseInt( e.key ) !== action.payload)
-      } else if( action.type ==='RENDERREMOVED' ){
-          return renderElements( state );
       } else {
         return state;
       }

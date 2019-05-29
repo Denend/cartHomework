@@ -1,0 +1,109 @@
+.title {
+  height: 60px;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 20px 30px;
+  color: #5E6977;
+  font-size: 20px;
+  font-weight: 350;
+}
+
+.product {
+  padding: 20px 30px;
+  height: 120px;
+  display: flex;
+}
+img {
+  width:180px;
+  height: 100px;
+  padding: 10px;
+
+}
+
+.product > * {
+  border-top:  1px solid #E1E8EE;
+  border-bottom:  1px solid #E1E8EE;
+}
+
+.buttons {
+  position: relative;
+  padding-top: 10px;
+  margin-left: 60px;
+}
+
+.delete-btn {
+  display: inline-block;
+  Cursor: pointer;
+  position: absolute;
+  right: 32px;
+  top: 10px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:before, &:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 25px;
+    width: 2px;
+    background-color: #333;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.description {
+  padding-top: 10px;
+  margin-right: 65px;
+  margin-left: 50px;
+  width: 110px;
+
+  span {
+    display: block;
+    font-size: 15px;
+    color: $dark-font-color;
+    font-weight: 380;
+  }
+
+  span:last-child {
+    font-weight: 250;
+    margin-top: 10px;
+    color: $light-font-color;
+  }
+}
+
+.quantity {
+  padding-top: 25px;
+  margin-right: 60px;
+
+  input {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 35px;
+    font-size: 17px;
+    color: $dark-font-color;
+    font-weight: 300;
+  }
+}
+
+.total-price {
+  width: 83px;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 16px;
+  color: $dark-font-color;
+  font-weight: 300;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+   opacity: 1;
+}
